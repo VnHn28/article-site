@@ -1,0 +1,8 @@
+.DS_Store
+*.sublime-*
+.sass-cache
+.codekit-cache
+config.codekit
+config.codekit3
+.config.codekit
+.config.codekit3

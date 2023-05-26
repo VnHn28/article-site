@@ -1,0 +1,150 @@
+//Uitilies
+//====================================================================
+@mixin _prefix($prop, $values, $vendors, $pos: prop) {
+    @each $prefix in $vendors {
+        @if $pos == prop {
+            #{$prefix}#{$prop}: $values;
+        } @else if $pos == value {
+            #{$prop}: #{$prefix}#{$values};
+        }
+    }
+}
+
+@mixin _align($direction: h, $value: left) {
+    @if $direction == h {
+        text-align: $value
+    } @else if $direction == v {
+        vertical-align: $value;
+    }
+}
+
+@mixin _visible($bool: true) {
+    @if $bool == true {
+        visibility: visible !important;
+    } @else if $bool == false {
+        visibility: hidden !important;
+    }
+}
+
+@mixin _pull($direction: left){
+    @if $direction == left {
+        float: left;
+    } @else if $direction == right {
+        float: right;
+    }
+}
+//====================================================================
+
+
+
+//Box
+//====================================================================
+@mixin _center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin _center-both {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+}
+
+@mixin _size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin _min-size($width, $height: $width) {
+    min-width: $width;
+    min-height: $height;
+}
+
+@mixin _width-range($min, $max) {
+    min-width: $min;
+    max-width: $max;
+}
+
+@mixin _circle($size) {
+    @include _size($size);
+    @include border-radius(50%);
+}
+//====================================================================
+
+
+
+//Typography
+//====================================================================
+@mixin _font-size($size) {
+    @if unitless($size) {
+        $size: $size * 1px;
+    }
+
+    font-size: $size;
+    font-size: calc-rem($size);
+}
+
+@mixin _text-render {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+@mixin _selection($text-color, $background-color) {
+    &::-moz-selection {
+        color: $text-color;
+        background-color: $background-color;
+    }
+
+    &::selection {
+        color: $text-color;
+        background-color: $background-color;
+    }
+}
+
+@mixin _hide-text {
+    overflow: hidden;
+    border: none;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+@mixin _text-truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    @include text-overflow(ellipsis);
+}
+//====================================================================
+
+
+
+//Breakpoints
+//====================================================================
+@mixin _bp-xs {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin _bp-sm {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin _bp-md {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin _bp-lg {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+//====================================================================

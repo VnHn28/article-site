@@ -1,0 +1,73 @@
+html{ overflow-y: unset;}
+
+.art-item.sz-lg .art-item-cover.sz-md{     
+    flex-basis: 100%;
+    max-width: 100%;
+    padding-bottom: 60%;
+}
+
+.art-item.sz-lg .art-item-content.sz-md{
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+@media (min-width:992px){
+    .art-item.sz-lg .art-item-cover.sz-md{     
+        flex-basis: 50%;
+        max-width: 50%;
+        padding-bottom: 24%;
+    }
+    
+    .art-item.sz-lg .art-item-content.sz-md{
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    
+}
+
+.art-item-cover{position: relative; border: 1px solid #eee;}
+.art-item-cover.intro::before,.art-item-cover.info::before,.art-item-cover.album::before,.art-item-cover.activity::before{
+    padding: 2px 4px;  color: #fff; box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3); position: absolute; right: 0; top: 0;  font-size: 0.9rem;
+}
+
+/* 改成 <span class="tag"></span> 樣式在 _components.scss
+.art-item-cover.intro::before{content: '介紹'; background: #1C60C6;  }
+.art-item-cover.info::before{content: '消息'; background: #DD8E46;  }
+.art-item-cover.album::before{content: '花絮'; background: #C61C82;  }
+.art-item-cover.activity::before{content: '活動'; background: #1CB3C6;  }
+ */
+
+
+@media (min-width:992px){
+    .art-item-cover.intro::before,.art-item-cover.info::before,.art-item-cover.album::before,.art-item-cover.activity::before{
+       font-size: 1rem; padding: 4px 8px; 
+    }
+}
+
+.author-intro{ white-space: inherit;}
+
+.article-album{margin-bottom: 100px;}
+.article-album .title{ font-size: 24px; line-height: 24px; margin-bottom: 20px; color: #17a5b7;}
+.article-album .title img{ width: 25px; margin-right: 10px;}
+.article-album .album{ display: flex; flex-wrap: wrap; justify-content: flex-start; }
+.article-album .album .item{ width: 100px; height: 68px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin: 2.5%; border: 1px solid #eee;}
+.article-album  .album .item img{  max-width: 100%;  max-height: 100%;margin: auto;}
+
+@media (min-width:992px){
+    .article-album .album .item{ width: 160px; height: 108px; margin: 0.5%;}
+}
+
+/* 調整venobox的關閉紐與桌機版照片高度 */
+.vbox-overlay .vbox-close{top: 5px; right: 5px; }
+
+#ad_002{ text-align: center; display: block;}
+#ad_002 img{ width: 300px;}
+
+@media (min-width:992px){
+    .vbox-overlay .vbox-container img{ max-height: 90vh;}
+    .vbox-overlay .vbox-close{top: 10px; right: 20px; }
+    #ad_002{ text-align: right; }
+}
+    
+.hasLargeItem .art-item:nth-child(2):before{ display: none; }
+

@@ -1,0 +1,42 @@
+stages:
+#  - test
+#  - build
+  - deploy
+
+#test:
+#  stage: test
+#  script: 
+#   - echo "Publishing to Beta Server folder /home/gitlab-runner/wwwroot/beta.circles.tw/"
+#  only:
+#  - master
+
+
+#build:
+#  stage: build
+#  script: echo "Building the app"
+
+deploy_staging:
+  stage: deploy
+  script:
+    - echo "Building wwwroot environment" ${CI_PROJECT_NAME}
+    - rsync -ap . ~/wwwroot/${CI_PROJECT_NAME}
+    - echo "Rsync back the newerest CRUDBOOSTER controller contents" 
+    - rsync -ap --no-links  --include 'Admin*' --exclude '*' ~/wwwroot/${CI_PROJECT_NAME}/app/Http/Controllers/ www@35.221.163.171:/home/www/wwwroot/channel-en.circles.tw/app/Http/Controllers/
+    - echo "Rsync to the production server" 
+    - rsync -ap  --no-links  --exclude 'bootstrap/cache'  --exclude 'public/upload' --exclude 'storage/' --exclude '.env' --exclude '/vendor' ~/wwwroot/${CI_PROJECT_NAME}/ www@35.221.163.171:/home/www/wwwroot/channel-en.circles.tw/
+
+    #- echo "Rsync back the newerest CRUDBOOSTER controller contents" 
+    #- rsync -rlp --no-links  --include 'Admin*' --exclude '*' ~/wwwroot/${CI_PROJECT_NAME}/app/Http/Controllers/ www@35.206.213.95:/var/www/channel-en.circles.tw/app/Http/Controllers/
+    #- echo "Rsync to the production server" 
+    #- rsync -rlp  --no-links  --exclude 'bootstrap/cache'  --exclude 'public/upload' --exclude 'storage/' --exclude 'config/' --exclude '.env' --exclude '/vendor' ~/wwwroot/${CI_PROJECT_NAME}/ www@35.206.213.95:/var/www/channel-en.circles.tw/
+
+    - echo "Rsync Done"
+  environment:
+    name: production
+    url: https://channel.circles.tw
+  only:
+    - master
+
+
+variables:
+  GIT_SSL_NO_VERIFY: "true"

@@ -1,0 +1,43 @@
+//Breakpoints
+$screen-xs: 480px;
+$screen-xs-min: $screen-xs;
+$screen-xs-width: 100%;
+
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm;
+$screen-sm-width: 90%;
+
+$screen-md: 992px;
+$screen-md-min: $screen-md;
+$screen-md-width: 960px;
+
+$screen-lg: 1200px;
+$screen-lg-min: $screen-lg;
+$screen-lg-width: 1152px;
+
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+
+//Cover scales
+$cover-scale: 60%;
+$cover-scale-md: 60%;
+$cover-scale-lg: 36%;
+
+$primary: #31D1CC;
+$primary-dark: darken($primary, 5%);
+$primary-darker: darken($primary, 10%);
+
+$black: #000;
+$white: #FFF;
+$text-lv1: $black;
+$text-lv2: #4a4a4a;
+$text-lv3: #555555;
+$text-lv4: #9b9b9b;
+
+$text-dark: #2a2a2a;
+$text-light: #bebebe;
+
+$border: #efefef;
+
+$gutter: 30px;
