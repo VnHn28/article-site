@@ -32,7 +32,7 @@
 			$this->col = [];
 			$this->col[] = ["label"=>"Id","name"=>"id"];
 			$this->col[] = ["label"=>"Title 標題","name"=>"title"];
-			$this->col[] = ["label"=>"Cover Image 圖片","name"=>"cover_image"];
+			$this->col[] = ["label"=>"Cover Image 圖片","name"=>"cover_image","image"=>true];
 			$this->col[] = ["label"=>"Category Id 選店分類","name"=>"category_id","join"=>"tab_store_categorys,name"];
 			$this->col[] = ["label"=>"Ad Position Id 廣告板位","name"=>"ad_position_id","join"=>"tab_ad_positions,position_name"];
 			$this->col[] = ["label"=>"Ad Schedule Begin 廣告開始時間","name"=>"ad_schedule_begin"];
