@@ -33,7 +33,7 @@ class StoreController extends Controller
 			return redirect('/stores', 302)->with('alert', '查無資料');
 		}
 
-		$related_stores = \App\tab_stores::where('tab_stores.enable', '=', 1)->where('tab_stores.reviewed', '=', 1)->orderBy('created_at', 'DESC')->limit(3)->get();
+		$related_stores = \App\tab_stores::where('tab_stores.enable', '=', 1)->where('tab_stores.reviewed', '=', 1)->orderBy('tab_stores.priority', 'DESC')->orderBy('tab_stores.id', 'DESC')->limit(3)->get();
     	return view('store')
     			->with('cover_image', $store->cover_image)
 	    		->with('store', $store)

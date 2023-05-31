@@ -11,7 +11,8 @@ class EventsController extends Controller
     	$nowDatetime = date('YmdHis');
 		$events = \App\tab_events::where('tab_events.enable', '=', 1)
 									->where('tab_events.reviewed', '=', 1)
-									->orderBy('priority', 'DESC')
+									->orderBy('tab_events.priority', 'DESC')
+									->orderBy('tab_events.id', 'DESC')
 									->get();
     	return view('events')
     			->with('events', $events)

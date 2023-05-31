@@ -33,7 +33,7 @@ class BooksController extends Controller
             return redirect('/books', 302)->with('alert', '查無此書');
         }
 
-		$related_books = \App\tab_books::where('tab_books.enable', '=', 1)->where('tab_books.reviewed', '=', 1)->orderBy('id', 'DESC')->limit(3)->get();
+		$related_books = \App\tab_books::where('tab_books.enable', '=', 1)->where('tab_books.reviewed', '=', 1)->orderBy('tab_books.priority', 'DESC')->orderBy('tab_books.id', 'DESC')->limit(3)->get();
 		$tab_author = \App\tab_authors::find( $tab_book->recommend_person_author_id );
 		return view('book')
 			->with('cover_image', $tab_book->cover_image)

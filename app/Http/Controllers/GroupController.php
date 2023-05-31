@@ -78,7 +78,7 @@ class GroupController extends Controller
 		}
 		//花絮照片排序EOL
 
-    	$related_groups = \App\tab_groups::where('category_id', '=', $group->category_id)->where('tab_groups.enable', '=', 1)->limit(3)->get();
+    	$related_groups = \App\tab_groups::where('category_id', '=', $group->category_id)->where('tab_groups.enable', '=', 1)->where('tab_groups.reviewed', '=', 1)->limit(3)->get();
 		return view('group')
             ->with('cover_image', $group->cover_image)
 			->with('group', $group)

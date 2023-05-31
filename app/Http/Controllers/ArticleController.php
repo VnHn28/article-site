@@ -31,7 +31,7 @@ class ArticleController extends Controller
             return redirect('/articles', 302)->with('alert', '查無此文章');
         }
 		
-    	$related_articles = \App\tab_articles::where('category_id', '=', $article->category_id)->where('tab_articles.enable', '=', 1)->where('tab_articles.reviewed', '=', 1)->limit(3)->orderBy('created_at', 'DESC')->get();
+    	$related_articles = \App\tab_articles::where('category_id', '=', $article->category_id)->where('tab_articles.enable', '=', 1)->where('tab_articles.reviewed', '=', 1)->limit(3)->orderBy('tab_articles.priority', 'DESC')->orderBy('tab_articles.id', 'DESC')->get();
 		return view('article')
             ->with('cover_image', $article->cover_image)
 			->with('article', $article)
