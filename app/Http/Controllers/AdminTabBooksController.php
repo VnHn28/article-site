@@ -46,8 +46,8 @@
 			$this->form = [];
 			$this->form[] = ['label'=>'Cover Image 書本照片','name'=>'cover_image','type'=>'upload','validation'=>'min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Title 標題','name'=>'title','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Subtitle  書目資訊(請參照固定格式)','name'=>'subtitle','type'=>'wysiwyg','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Content 推薦文','name'=>'content','type'=>'wysiwyg','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Subtitle  書目資訊(請參照固定格式)','name'=>'subtitle','type'=>'ckeditor','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Content 推薦文','name'=>'content','type'=>'ckeditor','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Recommend Person Author Id 推薦人','name'=>'recommend_person_author_id','type'=>'select','width'=>'col-sm-10','datatable'=>'tab_authors,id','datatable_format'=>'name'];
 			$this->form[] = ['label'=>'Related Url 相關網址','name'=>'related_url','type'=>'text','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Fb Url','name'=>'fb_url','type'=>'text','width'=>'col-sm-10'];

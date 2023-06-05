@@ -46,7 +46,7 @@
 			$this->form[] = ['label'=>'Cover Image 圖片','name'=>'cover_image','type'=>'upload','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Title 標題','name'=>'title','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Organization Name 主辦單位','name'=>'organization_name','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Subtitle 列表頁的簡介','name'=>'subtitle','type'=>'wysiwyg','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Subtitle 列表頁的簡介','name'=>'subtitle','type'=>'ckeditor','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Reservation Begin 報名開始時間','name'=>'reservation_begin','type'=>'datetime','validation'=>'date_format:Y-m-d H:i:s','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Reservation End 報名截止時間','name'=>'reservation_end','type'=>'datetime','validation'=>'date_format:Y-m-d H:i:s','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Reservation Url 報名網址','name'=>'reservation_url','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
@@ -54,10 +54,10 @@
 			$this->form[] = ['label'=>'Contact Name 聯絡人名稱','name'=>'contact_name','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Contact Email 聯絡信箱','name'=>'contact_email','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Location 活動地址','name'=>'location','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Location Description活動地點名稱','name'=>'location_description','type'=>'wysiwyg','validation'=>'min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Location Description活動地點名稱','name'=>'location_description','type'=>'ckeditor','validation'=>'min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Event Begin Time 活動開始時間','name'=>'event_begin_time','type'=>'datetime','validation'=>'date_format:Y-m-d H:i:s','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Event End Time 活動結束時間','name'=>'event_end_time','type'=>'datetime','validation'=>'date_format:Y-m-d H:i:s','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Content 活動說明','name'=>'content','type'=>'wysiwyg','validation'=>'string|min:5|max:30000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Content 活動說明','name'=>'content','type'=>'ckeditor','validation'=>'string|min:5|max:30000','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Fb Url','name'=>'fb_url','type'=>'text','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Published At 發佈日期','name'=>'published_date','type'=>'datetime','width'=>'col-sm-9'];
 			$this->form[] = ['label'=>'排序','name'=>'priority','type'=>'number','validation'=>'required|integer','width'=>'col-sm-9'];

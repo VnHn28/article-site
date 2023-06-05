@@ -50,9 +50,9 @@
 			$this->form[] = ['label'=>'Ad Schedule End 廣告結束時間','name'=>'ad_schedule_end','type'=>'datetime','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Category Id 選店分類','name'=>'category_id','type'=>'select','validation'=>'integer|min:0','width'=>'col-sm-10','datatable'=>'tab_store_categorys,id','datatable_format'=>'name'];
 			$this->form[] = ['label'=>'Cover Image 圖片','name'=>'cover_image','type'=>'upload','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Subtitle 列表頁的簡介','name'=>'subtitle','type'=>'wysiwyg','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Content 介紹內文','name'=>'content','type'=>'wysiwyg','validation'=>'required|string|min:5|max:20000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Sub Content 詳細資訊(請參照固定格式)','name'=>'sub_content','type'=>'wysiwyg','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Subtitle 列表頁的簡介','name'=>'subtitle','type'=>'ckeditor','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Content 介紹內文','name'=>'content','type'=>'ckeditor','validation'=>'required|string|min:5|max:20000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Sub Content 詳細資訊(請參照固定格式)','name'=>'sub_content','type'=>'ckeditor','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Location 地址','name'=>'location','type'=>'text','validation'=>'string|min:5|max:5000','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Related Url 相關網址','name'=>'related_url','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Fb Url','name'=>'fb_url','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];

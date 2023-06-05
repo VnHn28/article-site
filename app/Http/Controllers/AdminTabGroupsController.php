@@ -48,7 +48,7 @@
 			$this->form[] = ['label'=>'團體_文章分類','name'=>'group_article_categories_id','type'=>'select','validation'=>'required','width'=>'col-sm-9','dataquery'=>'SELECT `id` as `value`, CONCAT(`id`, " - ",`name`) as `label`  FROM tab_group_article_categories ORDER BY id'];
 			$this->form[] = ['label'=>'主圖','name'=>'cover_image','type'=>'upload','validation'=>'required|min:1|max:2048','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'列表頁簡介','name'=>'subtitle','type'=>'textarea','validation'=>'required|string','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'內文','name'=>'content','type'=>'wysiwyg','validation'=>'required','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'內文','name'=>'content','type'=>'ckeditor','validation'=>'required','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Members','name'=>'author_id','type'=>'select','validation'=>'required','width'=>'col-sm-10','dataquery'=>'SELECT `id` as `value`, CONCAT(`id`, " - ",`name`) as `label`  FROM tab_authors ORDER BY id'];
 			$this->form[] = ['label' => '精選花絮是否顯示', 'name' => 'display_gallery', 'type' => 'radio', 'validation' => 'required', 'width' => 'col-sm-10', 'dataenum' => '0|不顯示;1|顯示'];
 			$this->form[] = ['label'=>'精選花絮1','name'=>'gallery_img1','type'=>'upload','width'=>'col-sm-10'];

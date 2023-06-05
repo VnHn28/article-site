@@ -43,10 +43,10 @@
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
 			$this->form[] = ['label'=>'Name 姓名','name'=>'name','type'=>'text','validation'=>'required|string|min:1|max:70','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Company 公司名稱','name'=>'company','type'=>'wysiwyg','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Job Title 職務名稱','name'=>'job_title','type'=>'wysiwyg','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Intro 人物介紹','name'=>'intro','type'=>'wysiwyg','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Circles Intro','name'=>'circles_intro','type'=>'wysiwyg','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Company 公司名稱','name'=>'company','type'=>'ckeditor','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Job Title 職務名稱','name'=>'job_title','type'=>'ckeditor','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Intro 人物介紹','name'=>'intro','type'=>'ckeditor','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Circles Intro','name'=>'circles_intro','type'=>'ckeditor','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Email 信箱','name'=>'email','type'=>'email','width'=>'col-sm-10','placeholder'=>'You can only enter the number only'];
 			$this->form[] = ['label'=>'Phone 手機號碼','name'=>'phone','type'=>'number','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Circles Personal Url 個人circles網址','name'=>'circles_personal_url','type'=>'text','width'=>'col-sm-10'];

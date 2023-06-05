@@ -49,7 +49,7 @@
 			$this->form[] = ['label'=>'Cover Image 圖片','name'=>'cover_image','type'=>'upload','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Title 標題','name'=>'title','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Subtitle 列表頁的簡介','name'=>'subtitle','type'=>'textarea','validation'=>'required','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Content 文章內容','name'=>'content','type'=>'wysiwyg','validation'=>'required','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Content 文章內容','name'=>'content','type'=>'ckeditor','validation'=>'required','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Fb Url','name'=>'fb_url','type'=>'textarea','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Ad Position Id 廣告板位','name'=>'ad_position_id','type'=>'select','validation'=>'integer|min:0','width'=>'col-sm-10','datatable'=>'tab_ad_positions, id','datatable_where'=>'ad_position_type = \'articles\'','datatable_format'=>'ad_position_priority, \' - \', position_name'];
 			$this->form[] = ['label'=>'Ad Schedule Begin 廣告開始時間','name'=>'ad_schedule_begin','type'=>'datetime','validation'=>'date_format:Y-m-d H:i:s','width'=>'col-sm-10'];
