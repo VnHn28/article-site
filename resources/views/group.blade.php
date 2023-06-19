@@ -22,7 +22,7 @@
                             <div class="article-metas">
                                 <span class="article-meta-item">{{$category->name}}</span>
                                 <span class="article-meta-item">{{$group->member_name}}</span>
-                                <span class="article-meta-item">{{$group->created_at->format('Y/m/d')}}</span>
+                                <span class="article-meta-item">{{$group->published_date->format('Y/m/d')}}</span>
                             </div>
                             <h1 class="article-title">{{$group->title}}</h1>
                             @if(0)
@@ -160,7 +160,7 @@
                                     <a class="art-item-cover cover" style="background-image: url(/{{$related_group->cover_image}});" href="/article/{{$related_group->id}}"></a>
                                     <div class="art-item-content">
                                         <div class="art-item-meta">
-                                            <span class="meta">{{$related_group->created_at->format('Y/m/d')}}</span>
+                                            <span class="meta">{{$related_group->published_date->format('Y/m/d')}}</span>
                                         </div>
                                         <h3 class="art-item-title">
                                             <a href="/article/{{$related_group->id}}">{{$related_group->title}}</a>
