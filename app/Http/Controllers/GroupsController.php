@@ -8,7 +8,7 @@ class GroupsController extends Controller
 {
     public function index() {
     	$nowDatetime = time();
-    	// $group_ad1 = \App\tab_groups::selectRaw('tab_groups.id, tab_group_categorys.name, tab_groups.title, tab_groups.created_at, tab_groups.subtitle, tab_groups.cover_image, tab_members.name as memberName')
+    	// $group_ad1 = \App\tab_groups::selectRaw('tab_groups.id, tab_group_categorys.name, tab_groups.title, tab_groups.published_date, tab_groups.subtitle, tab_groups.cover_image, tab_members.name as memberName')
         //                             ->leftJoin('tab_ad_positions', 'tab_ad_positions.id', '=', 'tab_groups.ad_position_id')
         //                             ->leftJoin('tab_members', 'tab_members.id', '=', 'tab_groups.author_id')
         //                             ->leftJoin('tab_group_categorys', 'tab_group_categorys.id', '=', 'tab_groups.category_id')
@@ -18,7 +18,7 @@ class GroupsController extends Controller
     	// 							->where('ad_schedule_end', '<=', $nowDatetime)
         //                             ->orderBy('ad_schedule_begin');
 
-		$groups = \App\tab_groups::selectRaw('tab_groups.id, tab_group_categorys.name, tab_groups.title, tab_groups.created_at, tab_groups.subtitle, tab_groups.cover_image, tab_authors.name as memberName, tab_group_article_categories.name as article_category_name, tab_group_article_categories.list_color')
+		$groups = \App\tab_groups::selectRaw('tab_groups.id, tab_group_categorys.name, tab_groups.title, tab_groups.published_date, tab_groups.subtitle, tab_groups.cover_image, tab_authors.name as memberName, tab_group_article_categories.name as article_category_name, tab_group_article_categories.list_color')
                                 ->leftJoin('tab_authors', 'tab_authors.id', '=', 'tab_groups.author_id')
                                 ->leftJoin('tab_group_categorys', 'tab_group_categorys.id', '=', 'tab_groups.category_id')
                                 ->leftJoin('tab_group_article_categories', 'tab_group_article_categories.id', '=', 'tab_groups.group_article_categories_id')
@@ -50,7 +50,7 @@ class GroupsController extends Controller
         }
 
     	$nowDatetime = time();
-    	// $group_ad1 = \App\tab_groups::selectRaw('tab_groups.id, tab_group_categorys.name, tab_groups.title, tab_groups.created_at, tab_groups.subtitle, tab_groups.cover_image, tab_members.name as memberName')
+    	// $group_ad1 = \App\tab_groups::selectRaw('tab_groups.id, tab_group_categorys.name, tab_groups.title, tab_groups.published_date, tab_groups.subtitle, tab_groups.cover_image, tab_members.name as memberName')
         //                             ->leftJoin('tab_ad_positions', 'tab_ad_positions.id', '=', 'tab_groups.ad_position_id')
         //                             ->leftJoin('tab_members', 'tab_members.id', '=', 'tab_groups.author_id')
         //                             ->leftJoin('tab_group_categorys', 'tab_group_categorys.id', '=', 'tab_groups.category_id')
@@ -61,7 +61,7 @@ class GroupsController extends Controller
         //                             ->where('category_id', '=', $group_category_id)
         //                             ->orderBy('ad_schedule_begin');
 
-		$groups = \App\tab_groups::selectRaw('tab_groups.id, tab_group_categorys.name, tab_groups.title, tab_groups.created_at, tab_groups.subtitle, tab_groups.cover_image, tab_authors.name as memberName, tab_group_article_categories.name as article_category_name, tab_group_article_categories.list_color')
+		$groups = \App\tab_groups::selectRaw('tab_groups.id, tab_group_categorys.name, tab_groups.title, tab_groups.published_date, tab_groups.subtitle, tab_groups.cover_image, tab_authors.name as memberName, tab_group_article_categories.name as article_category_name, tab_group_article_categories.list_color')
                                 ->leftJoin('tab_authors', 'tab_authors.id', '=', 'tab_groups.author_id')
                                 ->leftJoin('tab_group_categorys', 'tab_group_categorys.id', '=', 'tab_groups.category_id')
                                 ->leftJoin('tab_group_article_categories', 'tab_group_article_categories.id', '=', 'tab_groups.group_article_categories_id')

@@ -24,7 +24,7 @@ class ArticlesController extends Controller
     								->where('ad_schedule_end', '<=', $nowDatetime)
                                     ->orderBy('ad_schedule_begin');
 
-		$articles = \App\tab_articles::select(['tab_articles.id', 'tab_article_categorys.name', 'tab_articles.title', 'tab_articles.created_at', 'tab_articles.subtitle', 'tab_articles.cover_image'])
+		$articles = \App\tab_articles::select(['tab_articles.id', 'tab_article_categorys.name', 'tab_articles.title', 'tab_articles.published_date', 'tab_articles.subtitle', 'tab_articles.cover_image'])
                                 ->leftJoin('tab_authors', 'tab_authors.id', '=', 'tab_articles.author_id')
                                 ->leftJoin('tab_article_categorys', 'tab_article_categorys.id', '=', 'tab_articles.category_id')
                                 ->leftJoin('tab_ad_positions', 'tab_ad_positions.id', '=', 'tab_articles.ad_position_id')
@@ -85,7 +85,7 @@ class ArticlesController extends Controller
                                     ->where('category_id', '=', $article_category_id)
                                     ->orderBy('ad_schedule_begin');
 
-		$articles = \App\tab_articles::select(['tab_articles.id', 'tab_article_categorys.name', 'tab_articles.title', 'tab_articles.created_at', 'tab_articles.subtitle', 'tab_articles.cover_image'])
+		$articles = \App\tab_articles::select(['tab_articles.id', 'tab_article_categorys.name', 'tab_articles.title', 'tab_articles.published_date', 'tab_articles.subtitle', 'tab_articles.cover_image'])
                                 ->where('tab_articles.enable', '=', 1)
                                 ->where('tab_articles.reviewed', '=', 1)
                                 ->leftJoin('tab_authors', 'tab_authors.id', '=', 'tab_articles.author_id')
