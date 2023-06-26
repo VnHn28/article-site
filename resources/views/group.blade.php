@@ -182,11 +182,11 @@
                         </footer>
                     </article>
                      <!-- 右側 pc版廣告Banner SOL -->
+                     <!--
                         <aside class="article-side f-col-12 f-col-md-4">
                             <br />
                             <section class="side-section">
                                 <div class="guangao">
-                                    <!--  -->
                                     <a id="ad_001" class="ad_20200122_side guangao-item" target="_blank"
                                         href="https://www.facebook.com/commerce/products/3234743803219309/"
                                         style="text-align: right">
@@ -198,6 +198,7 @@
                                 </div>
                             </section>
                         </aside>
+                        -->
                     <!-- 右側 pc版廣告Banner EOL -->
                     @include('incl/side')
                 </div>

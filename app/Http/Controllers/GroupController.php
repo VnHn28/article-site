@@ -35,8 +35,6 @@ class GroupController extends Controller
 		$tab_data_gallery = \App\tab_groups::select(['tab_groups.gallery_img1', 'tab_groups.priority_img1','tab_groups.gallery_img2', 'tab_groups.priority_img2','tab_groups.gallery_img3', 'tab_groups.priority_img3','tab_groups.gallery_img4', 'tab_groups.priority_img4','tab_groups.gallery_img5', 'tab_groups.priority_img5','tab_groups.gallery_img6', 'tab_groups.priority_img6','tab_groups.gallery_img7', 'tab_groups.priority_img7','tab_groups.gallery_img8', 'tab_groups.priority_img8','tab_groups.gallery_img9', 'tab_groups.priority_img9','tab_groups.gallery_img10','tab_groups.priority_img10', 'tab_groups.gallery_img11','tab_groups.priority_img11', 'tab_groups.gallery_img12','tab_groups.priority_img12'])
 										->where('tab_groups.id', '=', $id)
 										->where('tab_groups.display_gallery', '=', 1)
-										->where('tab_groups.enable', '=', 1)
-										->where('tab_groups.reviewed', '=', 1)
 										->first();
 
 		if($tab_data_gallery){

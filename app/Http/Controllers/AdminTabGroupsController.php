@@ -76,7 +76,7 @@
 			$this->form[] = ['label'=>'精選花絮12','name'=>'gallery_img12','type'=>'upload','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'花絮12排序權重','name'=>'priority_img12','type'=>'number','validation'=>'integer|min:0','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Published At 發佈日期','name'=>'published_date','type'=>'datetime','validation'=>'required','width'=>'col-sm-9'];
-			$this->form[] = ['label'=>'排序權重','name'=>'priority','type'=>'number','required|validation'=>'required|integer|min:0','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'排序權重','name'=>'priority','type'=>'number','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'審查','name'=>'reviewed','type'=>'radio','validation'=>'required|min:0|max:1','width'=>'col-sm-10','dataenum'=>'0|未審查;1|已審查'];
 			$this->form[] = ['label'=>'上下架','name'=>'enable','type'=>'radio','validation'=>'required|min:0|max:1','width'=>'col-sm-10','dataenum'=>'0|下架;1|上架'];
 			# END FORM DO NOT REMOVE THIS LINE
