@@ -13,7 +13,7 @@
                         <header class="article-header">
                             <div class="article-metas">
                                 <span class="article-meta-item">{{$store->category_name}}</span>
-                                <span class="article-meta-item">{{$store->published_date->format('Y/m/d')}}</span>
+                                <span class="article-meta-item">{{substr($store->published_date,0,10)}}</span>
                             </div>
                             <h1 class="article-title">{{$store->title}}</h1>
                             <img class="article-cover" src="/{{$store->cover_image}}">
@@ -61,7 +61,7 @@
                                     <a class="art-item-cover cover" style="background-image: url(/{{$related_store->cover_image}});" href="/store/{{$related_store->id}}"></a>
                                     <div class="art-item-content">
                                         <div class="art-item-meta">
-                                            <span class="meta">{{$related_store->published_date->format('Y/m/d')}}</span>
+                                            <span class="meta">{{substr($related_store->published_date,0,10)}}</span>
                                         </div>
                                         <h3 class="art-item-title">
                                             <a href="/store/{{$related_store->id}}">{{$related_store->title}}</a>

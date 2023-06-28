@@ -20,7 +20,7 @@
                             <div class="article-metas">
                                 <span class="article-meta-item">{{$category->name}}</span>
                                 <span class="article-meta-item">{{$article->name}}</span>
-                                <span class="article-meta-item">{{$article->published_date->format('Y/m/d')}}</span>
+                                <span class="article-meta-item">{{substr($article->published_date,0,10)}}</span>
                             </div>
                             <h1 class="article-title">{{$article->title}}</h1>
                             @if(0)
@@ -66,7 +66,7 @@
                                     <a class="art-item-cover cover" style="background-image: url(/{{$related_article->cover_image}});" href="/article/{{$related_article->id}}"></a>
                                     <div class="art-item-content">
                                         <div class="art-item-meta">
-                                            <span class="meta">{{$related_article->published_date->format('Y/m/d')}}</span>
+                                            <span class="meta">{{substr($related_article->published_date,0,10)}}</span>
                                         </div>
                                         <h3 class="art-item-title">
                                             <a href="/article/{{$related_article->id}}">{{$related_article->title}}</a>

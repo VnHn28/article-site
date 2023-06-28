@@ -39,7 +39,7 @@
                         <div class="art-item-content">
                             <div class="art-item-meta">
                                 <span class="meta">{{$article->name}}</span>
-                               <!--  <span class="meta">{{$article->published_date->format('Y/m/d')}}</span> -->
+                                <!-- <span class="meta">{{substr($article->published_date,0,10)}}</span> -->
                             </div>
                             <h3 class="art-item-title">
                                 <a href="/article/{{$article->id}}">{{$article->title}}</a>
