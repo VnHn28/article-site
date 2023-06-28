@@ -12,7 +12,7 @@
 <meta property="og:title" content="{{$title? $title : CRUDBooster::getSetting('meta_ogtitle')}}">
 <meta property="og:type" content="Website">
 <meta property="og:url" content="{{Request::url()}}">
-<meta property="og:image" content="{{env('APP_URL')}}/{{$cover_image or 'css/img/logo.png'}}">
+<meta property="og:image" content="{{env('APP_URL')}}/{{$cover_image or 'img/Channel_ogImage.jpg'}}">
 <meta property="og:site_name" content="{{$title or ''}} CiRCLELiNKS Channel">
 <meta property="og:description" content="<?php echo ($description) ? strip_tags( $description ) : CRUDBooster::getSetting('meta_ogdescription') ?>">
 <!--Facebook Meta End-->
