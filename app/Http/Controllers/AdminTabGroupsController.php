@@ -203,15 +203,15 @@
 				$('input[name=\"submit\"]').click(function(event) {
 					// Check if a file has been uploaded
 					if ($('input[name=\"display_gallery\"]:checked').val() === '1') {
-						var no_file = 0;
+						var file_input = 0;
 						var gal_img = 0;
 						$('input[id^=\"gallery_img\"]').each(function() {
 							if(this.files.length > 0) {
-								no_file+=1;
+								file_input+=1;
 							}
 							gal_img+=1;
 						});
-						if (no_file==0 && gal_img==12) {
+						if (file_input==0 && gal_img==12) {
 							event.preventDefault(); // Prevent the form from submitting
 							alert(\"請至少上傳一張精選花絮照片，或者「精選花絮是否顯示」請選擇「不顯示」。\");
 							return

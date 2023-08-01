@@ -113,7 +113,7 @@
                             <section class="article-album">
                                 <h2 class="title"><img src="img/icon_album.png" alt="">精選花絮</h2>
                                 <div class="album">
-                                @if($ordered_gallery)
+                                @if(isset($ordered_gallery))
                                     @foreach($ordered_gallery as $val_gallery)
                                         <a class="item venobox" data-gall="myGallery" href="/{{$val_gallery}}">
                                             <img src="/{{$val_gallery}}" alt="{{$group->title}}">
