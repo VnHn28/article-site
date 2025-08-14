@@ -104,7 +104,7 @@
 
                 @if(!$books->isEmpty())
                 <div class="cat-section">
-                    <h2 class="cat-section-title">Circles 選書</h2>
+                    <h2 class="cat-section-title">選書</h2>
                     <div class="f-row onlySmallItem">
                         @foreach($books as $i => $book)
                         <?php
@@ -138,7 +138,7 @@
 
                 @if(!$stores->isEmpty())
                 <div class="cat-section hasMediumItem">
-                    <h2 class="cat-section-title">Circles 選店</h2>
+                    <h2 class="cat-section-title">選店</h2>
                     <div class="f-row">
                         @if($store_ad1)
                         <div class="art-item f-col-12 f-col-md-6 sz-md">
