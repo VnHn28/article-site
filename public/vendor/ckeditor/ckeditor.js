@@ -1308,5 +1308,5 @@ CKEDITOR.config.wsc_customDictionaryIds||"";a.config.wsc_userDictionaryName=a.co
 
   // 在編輯器的頁面載入此 js
   // CKEDITOR.scriptLoader.load( '/vendor/ckeditor/circlelinks_ckeditor_template.js', function() {
-  //   console.log('Circlelinks ckeditor template is ready！');
+  //   console.log('ckeditor template is ready！');
   // });
