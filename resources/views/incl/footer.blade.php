@@ -17,15 +17,15 @@
         </nav>
         <nav class="section">
             @if(0)<a class="sitemap-link" href="/join">申請加入</a>@endif
-            @if(0)<a class="sitemap-link" href="https://www.circles.tw/helper">新手上路</a>@endif
-            @if(0)<a class="sitemap-link" href="https://www.circles.tw/sitemap">網站地圖</a>@endif
+            @if(0)<a class="sitemap-link" href="https://www.google.com/helper">新手上路</a>@endif
+            @if(0)<a class="sitemap-link" href="https://www.google.com/sitemap">網站地圖</a>@endif
             <h6 class="sitemap-title">CiRCLELiNKS</h6>
-            <a class="sitemap-link" href="https://www.circles.tw/portal" target="_blank">關於 CiRCLELiNKS</a>
-            <a class="sitemap-link" href="https://thailand-marketing.circles.tw/" target="_blank">泰國行銷加速器</a>
-            <a class="sitemap-link" href="https://www.circles.tw/feedback" target="_blank">聯絡我們</a>
+            <a class="sitemap-link" href="https://www.google.com/portal" target="_blank">關於 CiRCLELiNKS</a>
+            <a class="sitemap-link" href="https://thailand-marketing.google.com/" target="_blank">泰國行銷加速器</a>
+            <a class="sitemap-link" href="https://www.google.com/feedback" target="_blank">聯絡我們</a>
             <a class="sitemap-link" href="https://www.facebook.com/circlelinks.co.tw" target="_blank">FB粉絲團</a>
             <a class="sitemap-link" href="https://lin.ee/yZlwt2x" target="_blank">LINE客服</a>
-            <a class="sitemap-link" href="https://circles.tw/apps"  target="_blank">APP 下載</a>
+            <a class="sitemap-link" href="https://google.com/apps"  target="_blank">APP 下載</a>
         </nav>
         <nav class="section">
             <h6 class="sitemap-title">權益</h6>
@@ -52,12 +52,12 @@
                 </optgroup>
                 <optgroup label="CiRCLELiNKS">
                     @if(0)<option value="/join">申請加入</option>@endif
-                    <option value="https://www.circles.tw/portal">關於 CiRCLELiNKS</option>
-                    <option value="https://thailand-marketing.circles.tw/">泰國行銷加速器</option>
+                    <option value="https://www.google.com/portal">關於 CiRCLELiNKS</option>
+                    <option value="https://thailand-marketing.google.com/">泰國行銷加速器</option>
                     <option value="/feedback">聯絡我們</option>
                     <option value="https://www.facebook.com/circlelinks.co.tw">FB粉絲團</option>
                     <option value="https://lin.ee/yZlwt2x">LINE客服</option>
-                    <option value="https://circles.tw/apps">APP 下載</option>
+                    <option value="https://google.com/apps">APP 下載</option>
                 </optgroup>
                 <optgroup label="權益">
                     <option value="/terms">使用條款</option>
@@ -68,10 +68,10 @@
         </div>
         <div class="shares" style="padding-top:0px;">
             <div style="width: 220px; height: 60px; padding-top: 10px;">
-                <a class="lang-btn"  href="https://channel-en.circles.tw/" target="_blank" style="padding-left: 40px; padding-right: 40px; margin-bottom: 10px;">Global Site</a>
+                <a class="lang-btn"  href="https://channel-en.google.com/" target="_blank" style="padding-left: 40px; padding-right: 40px; margin-bottom: 10px;">Global Site</a>
             </div>
             <div style="width: 220px; height: 60px;">
-                <a class="more-btn" href="https://www.circles.tw/" target="_blank" style="padding-left: 40px; padding-right: 40px; margin-bottom: 10px;">登入CiRCLELiNKS</a>
+                <a class="more-btn" href="https://www.google.com/" target="_blank" style="padding-left: 40px; padding-right: 40px; margin-bottom: 10px;">登入CiRCLELiNKS</a>
             </div>
             <span>我要分享：</span>
             <a class="share-item" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{Request::url()}}&t={{App::environment('APP_TITLE')}}" title="分享到 Facebook">

@@ -17,7 +17,7 @@
                                 <li>主辦單位：{{$tab_event->organization_name}}</li>
                                 <li>報名日期：{{substr($tab_event->reservation_begin,0,16)}} 至 {{substr($tab_event->reservation_end,0,16)}}</li>
                                 <li>相關網址：<a href="{{$tab_event->related_url}}" target="_blank">{{$tab_event->related_url}}</a></li>
-                                <!-- <li>報名網址：<a href="https://www.circles.tw/events/public/94" target="_blank">https://www.circles.tw/events/public/94</a></li> -->
+                                <!-- <li>報名網址：<a href="https://www.google.com/events/public/94" target="_blank">https://www.google.com/events/public/94</a></li> -->
                             </ul>
                         </header>
                         <section class="event-section event-data">

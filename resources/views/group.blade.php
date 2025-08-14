@@ -193,7 +193,7 @@
                                         <img id="ad_001_img" src="/ad_banners/C-300x250.png">
                                     </a>
                                     <a id="ad_002" class="ad_20200122_side guangao-item" target="_blank"
-                                        href="https://www.circles.tw/feedback"><img id="ad_002_img" src="img/banner.jpg">
+                                        href="https://www.google.com/feedback"><img id="ad_002_img" src="img/banner.jpg">
                                     </a>
                                 </div>
                             </section>

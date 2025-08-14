@@ -14,7 +14,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a class="header-menu-item @if( preg_match('/books/', request()->route()->getName()) ) active @endif " href="/books">選書</a>
             <a class="header-menu-item @if( preg_match('/stores/', request()->route()->getName()) ) active @endif " href="/stores">選店</a>
             <a class="header-menu-item @if( preg_match('/writers/', request()->route()->getName()) ) active @endif " href="/writers">channel之友</a>
-            <a class="header-menu-item lang_select" target="_blank" href="https://channel-en.circles.tw/"> Global Site</a>
+            <a class="header-menu-item lang_select" target="_blank" href="https://channel-en.google.com/"> Global Site</a>
         </nav>
     </div>
 </header>
