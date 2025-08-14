@@ -8,7 +8,7 @@
         <div id="wrap">
             @include('incl/header')
             <main id="main" class="l-container">
-                <h2 class="cat-menu-title">Channel 人物介紹</h2>
+                <h2 class="cat-menu-title">ArticleSite 人物介紹</h2>
                 <div class="f-row hasMediumItem">
                     @foreach($authors as $author)
                     <div class="author-item f-col-8 f-col-offset-2 f-col-sm-4 f-col-sm-offset-1 f-col-md-3 f-col-md-offset-0">

@@ -10,9 +10,9 @@
         </nav>
         <nav class="section">
             <h6 class="sitemap-title">關於</h6>
-            <a class="sitemap-link" href="/about_channel">關於 Channel</a>
+            <a class="sitemap-link" href="/about_channel">關於 ArticleSite</a>
             @if(0)<a class="sitemap-link" href="/ads">廣告合作</a>@endif
-            <a class="sitemap-link" href="/writers">Channel之友</a>
+            <a class="sitemap-link" href="/writers">之友</a>
             @if(0)<a class="sitemap-link" href="/submit">我要投稿</a>@endif
         </nav>
         <nav class="section">
@@ -44,9 +44,9 @@
                     <option value="/stores">選店</option>
                 </optgroup>
                 <optgroup label="關於">
-                    <option value="/about_channel">關於 Channel</option>
+                    <option value="/about_channel">關於 ArticleSite</option>
                     @if(0)<option value="/ads">廣告合作</option>@endif
-                    <option value="/writers">Channel之友</option>
+                    <option value="/writers">之友</option>
                     @if(0)<option value="/submit">我要投稿</option>@endif
                 </optgroup>
                 <optgroup label="VnHn28">
@@ -66,7 +66,7 @@
         </div>
         <div class="shares" style="padding-top:0px;">
             <div style="width: 220px; height: 60px; padding-top: 10px;">
-                <a class="lang-btn"  href="https://channel-en.google.com/" target="_blank" style="padding-left: 40px; padding-right: 40px; margin-bottom: 10px;">Global Site</a>
+                <a class="lang-btn"  href="https://news.yahoo.com/" target="_blank" style="padding-left: 40px; padding-right: 40px; margin-bottom: 10px;">Global Site</a>
             </div>
             <div style="width: 220px; height: 60px;">
                 <a class="more-btn" href="https://www.google.com/" target="_blank" style="padding-left: 40px; padding-right: 40px; margin-bottom: 10px;">登入平台</a>
