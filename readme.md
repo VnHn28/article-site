@@ -1,10 +1,6 @@
-CiRCLELiNKS - Channel 高階人際網路平台
+快訊網路平台
 
-主機架構
-tw-web1
-tw-db1
-
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/laravel/art/master/laravel-logo.svg" width="150" alt="Laravel logo"></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
